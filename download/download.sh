@@ -1,9 +1,24 @@
-# Presence/absence of expression (Simple file)
-wget --timestamping ftp://lausanne.isb-sib.ch/pub/databases/Bgee/current/download/calls/expr_calls/Homo_sapiens_expr-simple.tsv.zip
-unzip -o Homo_sapiens_expr-simple.tsv.zip && rm Homo_sapiens_expr-simple.tsv.zip
-gzip Homo_sapiens_expr-simple.tsv
+## Presence/absence of expression
+expr_calls_url="ftp://lausanne.isb-sib.ch/pub/databases/Bgee/current/download/calls/expr_calls"
+
+# Simple file
+filename=Homo_sapiens_expr-simple.tsv
+wget --timestamping $expr_calls_url/$filename.zip
+unzip -o $filename.zip && rm $filename.zip
+gzip --force $filename
+
+# Complete file
+filename=Homo_sapiens_expr-complete.tsv
+wget --timestamping $expr_calls_url/$filename.zip
+unzip -o $filename.zip && rm $filename.zip
+gzip --force $filename
+
+
+## Differential expression
+diffex_calls_url="ftp://lausanne.isb-sib.ch/pub/databases/Bgee/current/download/calls/diff_expr_calls"
 
 # Over-/Under-expression across anatomy (Simple file)
-wget --timestamping ftp://lausanne.isb-sib.ch/pub/databases/Bgee/current/download/calls/diff_expr_calls/Homo_sapiens_diffexpr-anatomy-simple.tsv.zip
-unzip -o Homo_sapiens_diffexpr-anatomy-simple.tsv.zip && rm Homo_sapiens_diffexpr-anatomy-simple.tsv.zip
-gzip Homo_sapiens_diffexpr-anatomy-simple.tsv
+filename=Homo_sapiens_diffexpr-anatomy-simple.tsv
+wget --timestamping $diffex_calls_url/$filename.zip
+unzip -o $filename.zip && rm $filename.zip
+gzip --force $filename
