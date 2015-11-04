@@ -1,5 +1,7 @@
+bgee_version=bgee_v13_1
+
 ## Presence/absence of expression
-expr_calls_url="ftp://lausanne.isb-sib.ch/pub/databases/Bgee/current/download/calls/expr_calls"
+expr_calls_url="ftp://ftp.bgee.org/$bgee_version/download/calls/expr_calls"
 
 # Simple file
 filename=Homo_sapiens_expr-simple.tsv
@@ -15,7 +17,7 @@ gzip --force $filename
 
 
 ## Differential expression
-diffex_calls_url="ftp://lausanne.isb-sib.ch/pub/databases/Bgee/current/download/calls/diff_expr_calls"
+diffex_calls_url="ftp://ftp.bgee.org/$bgee_version/download/calls/diff_expr_calls"
 
 # Over-/Under-expression across anatomy (Simple file)
 filename=Homo_sapiens_diffexpr-anatomy-simple.tsv
