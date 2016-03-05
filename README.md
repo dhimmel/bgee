@@ -1,6 +1,6 @@
 # Extracting anatomy-specific gene expression in humans from Bgee
 
-[Bgee](http://bgee.org/) is a database that integrates gene expression data from both microarray and RNA-seq experiments. The Bgee curators annotate samples by their species, anatomical structure, and developmental stage. Bgee leverages anatomy and development ontologies to call whether a gene is present or absent and under/over-epxressed in a given condition.
+[Bgee](http://bgee.org/) is a database that integrates gene expression data from both microarray and RNA-seq experiments. The Bgee curators annotate samples by their species, anatomical structure, and developmental stage. Bgee leverages anatomical and developmental ontologies to call whether a gene is present or absent and under/over-expressed in a given condition.
 
 Here, we process Bgee to generate gene expression profiles for human anatomical structures (tissues). We extract two gene expression measures:
 
@@ -11,7 +11,7 @@ See our _Thinklab_ [project](http://doi.org/10.15363/thinklab.40 "Repurposing dr
 
 ## Execution
 
-Execute `download.sh` from the `download` directory to retrieve the raw Bgee downloads.
+Execute [`download.sh`](download/download.sh) from the `download` directory to retrieve the raw Bgee downloads.
 
 Then the notebooks are executed in the following order:
 
