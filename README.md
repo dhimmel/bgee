@@ -1,5 +1,7 @@
 # Extracting anatomy-specific gene expression in humans from Bgee
 
+[![DOI: 10.5281/zenodo.47157](https://zenodo.org/badge/doi/10.5281/zenodo.47157.svg)](https://doi.org/10.5281/zenodo.47157)
+
 [Bgee](http://bgee.org/) is a database that integrates gene expression data from both microarray and RNA-seq experiments. The Bgee curators annotate samples by their species, anatomical structure, and developmental stage. Bgee leverages anatomical and developmental ontologies to call whether a gene is present or absent and under/over-expressed in a given condition.
 
 Here, we process Bgee to generate gene expression profiles for human anatomical structures (tissues). We extract two gene expression measures:
